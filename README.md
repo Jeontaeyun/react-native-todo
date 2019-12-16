@@ -45,3 +45,5 @@ $pod install
 $yarn android
 $yarn ios --simulator="iPhone 11"
 ```
+
+## 리액트 네이티브 + Typescript 도입

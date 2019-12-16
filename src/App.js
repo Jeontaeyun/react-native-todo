@@ -5,6 +5,7 @@ import InputText from "./components/TextInput";
 import Button from "./components/Button";
 import TodoList from "./container/TodoList";
 import TabBar from "./container/TabBar";
+import Animation from "./components/Animation";
 /**
  * ScrollView는 플랫폼을 감싸는 것으로 스크롤이 가능한 View 컴포넌트 입니다.
  * keyboardShouldPersistTaps속성은 키보드각 열리 있으면 닫아서 UI가 onPress이벤트를 모두 처리하게 합니다.
@@ -81,6 +82,7 @@ class App extends React.Component {
                         toggleComplete={this.toggleComplete}
                     />
                     <Button submitTodo={this.submitTodo} />
+                    <Animation />
                 </ScrollView>
                 <TabBar type={type} setType={this.setType} />
             </View>
