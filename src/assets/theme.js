@@ -1,5 +1,5 @@
 const AppStyles = {
-    primary: "#1946D",
+    primary: "#1976D2",
 };
 
 export default AppStyles;

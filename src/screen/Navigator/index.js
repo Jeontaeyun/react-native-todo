@@ -8,23 +8,23 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 
+/**
+ *  options 객체를 생성하면, 스택 내비게이터는 자동으로 각 라우트 상단에 헤더를 만듭니다.
+ * 헤더에는 보통 현재 라우트의 제목과 뒤로가기 버튼과 같은 버튼이 들어갑니다.
+ */
+
 const Navigator = createStackNavigator(
     {
         Cities: { screen: Cities },
         City: { screen: City },
     },
     {
-        /**
-         *  options 객체를 생성하면, 스택 내비게이터는 자동으로 각 라우트 상단에 헤더를 만듭니다.
-         * 헤더에는 보통 현재 라우트의 제목과 뒤로가기 버튼과 같은 버튼이 들어갑니다.ㄴ
-         */
-
-        navigationOptions: {
+        defaultNavigationOptions: () => ({
             headerStyle: {
-                baackgrorundCoolor: AppStyles.primary,
+                backgroundColor: AppStyles.primary,
             },
-            headerTintColor: "#000",
-        },
+            headerTintColor: "#fff",
+        }),
     },
 );
 

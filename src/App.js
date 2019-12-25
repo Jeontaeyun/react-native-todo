@@ -46,7 +46,7 @@ class App extends React.Component {
             <Tabs
                 screenProps={{
                     cities: this.state.cities,
-                    addCitiy: this.addCitiy,
+                    addCity: this.addCitiy,
                     addLocation: this.addLocation,
                 }}
             />
